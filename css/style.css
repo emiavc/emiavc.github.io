@@ -71,7 +71,7 @@ nav{
 .mob-nav{
     display:none;
 }
-#logo{
+.logo{
     background-image:url("../assets/logo-icon__color.svg");
     background-repeat:no-repeat;
     height:30px;
@@ -81,7 +81,7 @@ nav{
     flex-grow:1;
     transition: all 0.2s ease-in-out;
 }
-#logo:hover{
+.logo:hover{
     background-image:url("../assets/logo-icon_color-filled-01.svg");
     background-color:transparent;
     transition: all 0.2s ease-in-out;
@@ -298,8 +298,89 @@ a.skip-down__icon:hover{
 }
 
 /*CONTACT*/
+#contact{
+    margin-bottom:200px;
+}
 #contact .title{
     margin-bottom:30px;
+}
+.contact-grid{
+    display:grid;
+    grid-template-columns:50%;
+}
+#contact h2{
+    margin-bottom:30px;
+    grid-column:1/2;
+    grid-row:1/2;
+}
+#contact .pointer{
+    margin-right:30px;
+    float:right;
+    margin-left:auto;
+}
+.pointer__contact{
+    grid-column:1/2;
+    grid-row:2/3;
+}
+.contact-me{
+    grid-column:2/4;
+    grid-row:2/3;
+    /* margin-left:30px; */
+}
+.contact-me a:hover{
+    background:transparent;
+}
+.contact-me p{
+    font-size:1.5em;
+}
+.pointer__find{
+    grid-column:2/3;
+    grid-row:3/4;
+    /* padding-top:15px;
+    height:45px; */
+    padding:15px;
+}
+.find-me{
+    grid-column:3/4;
+    grid-row:3/4;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    /* margin-left:30px; */
+    /* padding-top:30px; */
+}
+.find-me a{
+    padding:0;
+}
+.skip-up{
+    width:100%;
+}
+a.skip-up__icon{
+    background-image:url(../assets/icons/icon__up-arrow.svg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:30px;
+    width:30px;
+    float:right;
+    background-color:transparent;
+    scroll-behavior:smooth;
+    transition:all 0.3s ease-in-out;
+    margin-bottom:30px;
+}
+a.skip-up__icon:hover{
+    background-image:url(../assets/icons/icon__up-arrow-hover.svg);
+    background-color:transparent;
+}
+/* FOOTER */
+footer{
+    border-top:#98A9E9 solid 1px;
+    padding-top:30px;
+    padding-bottom:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
 }
 
 @media only screen and (max-width:1100px) and (min-width:700px){
@@ -423,5 +504,18 @@ a.skip-down__icon:hover{
     }
     .project br{
         display:none;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+        display:flex;
+        flex-direction:column;
+    }
+
+    /* FOOTER */
+    footer{
+        flex-direction:column-reverse;
+        align-items:center;
+        gap:30px;
     }
 }
