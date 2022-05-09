@@ -259,6 +259,36 @@ a.skip-down__icon:hover{
 .project1:hover{
     background-image:url(../assets/project1/project1__banner.png);
 }
+.project2{
+    background-image:url(../assets/project2/project2__banner-sepia.png);
+}
+.project2:hover{
+    background-image:url(../assets/project2/project2__banner.png);
+}
+.project3{
+    background-image:url(../assets/project3/project3__banner-sepia.png);
+}
+.project3:hover{
+    background-image:url(../assets/project3/project3__banner.png);
+}
+.project4{
+    background-image:url(../assets/project4/project4__banner-sepia.png);
+}
+.project4:hover{
+    background-image:url(../assets/project4/project4__banner.png);
+}
+.project5{
+    background-image:url(../assets/project5/project5__banner-sepia.png);
+}
+.project5:hover{
+    background-image:url(../assets/project5/project5__banner.png);
+}
+.project6{
+    background-image:url(../assets/project6/project6__banner-sepia.png);
+}
+.project6:hover{
+    background-image:url(../assets/project6/project6__banner.png);
+}
 .project p{
     align-self:end;
 }
