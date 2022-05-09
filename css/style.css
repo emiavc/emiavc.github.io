@@ -41,7 +41,7 @@ h3{
 }
 p{
     font-weight:200;
-    font-size:larger;
+    /* font-size:larger; */
     line-height:1.25em;
 }
 a,:link,:hover,:active,:visited{
@@ -187,6 +187,7 @@ a.skip-down__icon:hover{
 /* WORK */
 #work{
     scroll-behavior:smooth;
+    margin-bottom:200px;
 }
 #work .title, #work2 .title{
     margin:0;
