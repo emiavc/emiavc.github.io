@@ -104,6 +104,7 @@ header{
 .title h1{
     grid-column:1/2;
     grid-row:1/2;
+    margin:0;
 }
 .title h2{
     margin-bottom:30px;
@@ -189,7 +190,7 @@ a.skip-down__icon:hover{
     scroll-behavior:smooth;
     margin-bottom:200px;
 }
-#work .title, #work2 .title{
+#work .title, #contact .title{
     margin:0;
     border-bottom:#98A9E9 solid 1px;
 }
@@ -240,7 +241,6 @@ a.skip-down__icon:hover{
     transition: all 0.2s ease-in-out;
 }
 .project__img{
-    background-image:url(../assets/project1/project1__banner-sepia.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -249,49 +249,57 @@ a.skip-down__icon:hover{
     grid-column:2/3;
     grid-row:1/3;
     transition: all 0.2s ease-in-out;
+    display:flex;
+}
+.project__img p{
+    display:none;
 }
 .project__img:hover{
-    background-image:url(../assets/project1/project1__banner.png);
+    transition: all 0.2s ease-in-out;
+}
+.project__img:hover p{
+    display:block;
+    color:#0A0908;
+    padding:15px;
+    align-self:end;
+    font-weight:normal;
+    font-style:italic;
+    text-transform:uppercase;
     transition: all 0.2s ease-in-out;
 }
 .project1{
-    background-image:url(../assets/project1/project1__banner-sepia.png);
-}
-.project1:hover{
-    background-image:url(../assets/project1/project1__banner.png);
+    background-image:url(../assets/project1/project1__banner-small.png);
 }
 .project2{
-    background-image:url(../assets/project2/project2__banner-sepia.png);
-}
-.project2:hover{
-    background-image:url(../assets/project2/project2__banner.png);
+    background-image:url(../assets/project2/project2__banner-small.png);
 }
 .project3{
-    background-image:url(../assets/project3/project3__banner-sepia.png);
+    background-image:url(../assets/project3/project3__banner-small.png);
 }
-.project3:hover{
-    background-image:url(../assets/project3/project3__banner.png);
+.project3:hover p, .project6:hover p{
+    align-self:flex-start;
 }
 .project4{
-    background-image:url(../assets/project4/project4__banner-sepia.png);
+    background-image:url(../assets/project4/project4__banner-small.png);
 }
-.project4:hover{
-    background-image:url(../assets/project4/project4__banner.png);
+.project5:hover p, .project6:hover p{
+    color:#98A9E9;
 }
 .project5{
-    background-image:url(../assets/project5/project5__banner-sepia.png);
-}
-.project5:hover{
-    background-image:url(../assets/project5/project5__banner.png);
+    background-image:url(../assets/project5/project5__banner-small.png);
+    border:#98A9E9 solid .5px;
 }
 .project6{
-    background-image:url(../assets/project6/project6__banner-sepia.png);
-}
-.project6:hover{
-    background-image:url(../assets/project6/project6__banner.png);
+    background-image:url(../assets/project6/project6__banner-small.png);
+    border:#98A9E9 solid .5px;
 }
 .project p{
     align-self:end;
+}
+
+/*CONTACT*/
+#contact .title{
+    margin-bottom:30px;
 }
 
 @media only screen and (max-width:1100px) and (min-width:700px){
