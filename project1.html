@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>P1: Magical Llamacorn</title>
+    <meta name="description" content="Portfolio Project 1">
+    <meta name="author" content="Emily Van Camp">
+
+    <meta property="og:title" content="Emily Van Camp Portfolio Project 1">
+    <meta property="og:url" content="#">
+    <meta property="og:description" content="Portfolio Project 1">
+    <meta property="og:image" content="assets/icon_color-01.svg">
+
+    <link rel="icon" href="#">
+    <link rel="icon" href="#" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="#">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="#top"></section>
+    <!--Mobile Nav-->
+    <nav class="mob-nav">
+        <!-- <img id="logo" alt="logo" src="assets/logo-icon__color.svg"> -->
+        <a class="logo" alt="logo" href="index.html"></a>
+        <!-- Hamburger menu-->
+        <div class="icon" onclick="toggleNav()">
+            <span id="navBars" class="icon__first"></span>
+            <span ></span>
+        </div>
+        <!--Nav links (toggleable)-->
+        <div id="navLinks">
+            <a href="index.html#work">Work</a>
+            <!-- <a href="#about">About</a> -->
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+    <!--Desktop Nav-->
+    <nav class="desktop-nav">
+        <!-- <img id="logo" alt="logo" src="assets/logo-icon__color.svg"> -->
+        <a class="logo" alt="logo" href="index.html"></a>
+        <div id="desktop-nav__links">
+            <a href="index.html#work">Work</a>
+            <!-- <a href="#about">About</a> -->
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <section class="banner__container">
+            <video class="banner" src="assets/project1/project1__video.mp4" poster="assets/project1/project1__thumbnail.png" controls ></video>
+            <div class="banner__text project1__text">
+                <h1>Magical Llamacorn</h1>
+                <h2>Animated Poster | Fall 2021</h2>
+                <br>
+                <br>
+                <p>Magical Llamacorn is an animation by Emily Van Camp based on The Lost and Never Found poster by Minh Anh.  It follows the adventures of its titular character, the magical llamacorn, as they travel the world in search of boba.</p>
+                <br>
+                <p class="program-text">Programs Used: Adobe Illustrator, Adobe After Effects</p>
+            </div>
+            <img class="project1__poster" src="assets/project1/project1__poster.png">
+        </section>
+    </main>
+    <footer>
+        <a class="logo" alt="logo" href="#top"></a>
+        <p>© 2022 Emily Van Camp All Rights Reserved</p>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+</body>
