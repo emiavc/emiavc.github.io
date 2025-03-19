@@ -124,7 +124,7 @@ header{
 .profile-pic{
     grid-column:2/3;
     grid-row:1/4;
-    background-image:url("../assets/profile_square.png");
+    background-image:url("../assets/VanCamp_Pfp.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
